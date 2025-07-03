@@ -1,0 +1,722 @@
+/* 动画class */
+.animated {
+  display: block !important;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  /* z-index: 100;  */
+}
+.bounce-down {
+  animation: bounce-down 1.5s linear infinite;
+}
+.fadeIn4 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 0.8s;
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-delay: 1s;
+}
+.fadeInRight2 {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-delay: 0.5s;
+}
+.fadeInRight3 {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.fadeInRight4 {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-delay: 1.5s;
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-delay: 0.8s;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-delay: 0.8s;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.fadeInLeft2 {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-delay: 0.5s;
+}
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.fadeIn2 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1.2s;
+}
+.fadeIn3 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.bounceIn {
+  display: block !important;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+/* 动画 */
+@keyframes bounce-down {
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(0, 0);
+  }
+  10% {
+    opacity: .8;
+    transform: scale(1) translate(3px, 2px);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(2) translate(6px, -10px);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(3) translate(8px, -20px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(5) translate(2px, -30px);
+  }
+}
+@keyframes smokeL {
+  0% {
+    opacity: 0;
+    transform: scale(1) translate(0, 0);
+  }
+  10% {
+    opacity: .8;
+    transform: scale(1) translate(3px, 2px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5) translate(6px, -10px);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; }
+}
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+
+
+
+
+/*************** 顶部栏 ***************/
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: white;
+}
+/* 顶部栏 - 导航菜单 */
+.header .header-content {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .header-content-logo {
+  float: left;
+  color: #000;
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+}
+.header .header-content-nav {
+  float: right;
+  width: 80%;
+  line-height: 70px;
+  text-align: right;
+}
+.header .header-content-nav .nav-item {
+  display: inline-block;
+  color: #8b9097;
+  font-size: 14px;
+  padding: 0 20px;
+  position: relative;
+}
+.header .header-content-nav .nav-item:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+  height: 12px;
+  width: 2px;
+  z-index: 3;
+}
+.header .header-content-nav .nav-item:last-child {
+  padding-right: 0;
+}
+.header .header-content-nav .nav-item:last-child:after {
+  width: 0;
+}
+.header .header-content-nav .nav-item a {
+  color: #8b9097;
+}
+.header .header-content-nav .nav-item.active a {
+  color: #19cc82;
+}
+
+
+
+
+
+
+/*************** 右侧锚点菜单 ***************/
+#menu {
+  padding: 0;
+  position: fixed;
+  width: 60px;
+  list-style-type: none;
+  z-index: 70;
+  right: 5%;
+  height: 240px;
+  top: 50%;
+  margin-top: -120px;
+}
+#menu li a {
+  display: block;
+  margin: 24px auto;
+  color: transparent;
+  width: 12px;
+  height: 12px;
+  background: #bcbcbc;
+  border-radius: 50%;
+  transition: all .3s;
+}
+#menu li.active a {
+  background: #19cc82;
+  width: 56px;
+  height: 20px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/*************** 内容 - 公共 ***************/
+
+.section {
+  text-align: center;
+  font: 50px "Microsoft Yahei";
+  color: #fff;
+  position: relative;
+}
+.section .section-download-btn a {
+  display: inline-block;
+  width: 230px;
+  cursor: pointer;
+  height: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 40px;
+  text-align: center;
+  background: #19cc82;
+}
+.section .section-download-btn a img {
+  vertical-align: middle;
+}
+.section .app-title {
+  color: #19cc82;
+  font-size: 60px;
+}
+.section .app-tip {
+  color: #333333;
+  font-size: 30px;
+  margin: 20px 0;
+}
+.section .app-text {
+  color: #999999;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+
+
+
+/*************** 内容 - 首页 ***************/
+.main-page {
+  width: 1060px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  position: relative;
+}
+.main-page-img {
+  height: 313px;
+}
+.main-page-img img {
+  height: 100%;
+}
+.main-page-font {
+  height: 86px;
+  color: #999;
+  font-size: 30px;
+}
+.main-page .down-btn {
+  width: 64px;
+  height: 25px;
+  margin: 0 auto;
+  animation: bounce-down 1s linear infinite;
+}
+.main-page .down-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*************** 内容 - 木鱼 ***************/
+.muyu-page {
+  width: 1060px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.muyu-page-left {
+  float: left;
+  text-align: left;
+  width: 380px;
+}
+.muyu-page-right {
+  float: right;
+  width: 650px;
+  height: 500px;
+  position: relative;
+}
+.muyu-page-right-one {
+  position: absolute;
+  width: 250px;
+  left: 0;
+  bottom: 0;
+  border: #fff 2px solid;
+  border-radius: 10px;
+}
+.muyu-page-right-two {
+  position: absolute;
+  width: 250px;
+  left: 200px;
+  z-index: 1;
+  border: #fff 2px solid;
+  border-radius: 10px;
+}
+.muyu-page-right-three {
+  position: absolute;
+  width: 250px;
+  right: 0;
+  bottom: 0;
+  border: #fff 2px solid;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/*************** 内容 - 小决定 ***************/
+.coin-page {
+  width: 1060px;
+  margin: 0 auto;
+}
+.coin-page-left {
+  float: left;
+  width: 630px;
+  height: 455px;
+  position: relative;
+}
+.coin-page-left-two {
+  position: absolute;
+  left: 0;
+  height: 450px;
+  bottom: -30px;
+  z-index: 2;
+  border: #fff 2px solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.coin-page-left-three {
+  position: absolute;
+  left: 100px;
+  height: 450px;
+  z-index: 3;
+  border: #fff 2px solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.coin-page-left-two img {
+  height: 100%;
+}
+.coin-page-left-three img {
+  height: 100%;
+}
+.coin-page-right {
+  float: right;
+  text-align: right;
+  width: 380px;
+  position: relative;
+}
+.heart {
+  width: 37px;
+  height: 34px;
+  position: absolute;
+  left: 316px;
+  top: 229px;
+  z-index: 4;
+  animation: heart 2s linear infinite;
+}
+.heart img {
+  width: 100%;
+  height: 100%;
+}
+.heart-one {
+  opacity: 0;
+  width: 56px;
+  height: 51px;
+  position: absolute;
+  left: 370px;
+  top: 204px;
+  z-index: 4;
+  animation: smokeL 1s linear infinite;
+  animation-delay: 3.5s;
+}
+.heart-one img {
+  width: 100%;
+  height: 100%;
+}
+.heart-two {
+  width: 83px;
+  height: 78px;
+  position: absolute;
+  right: 165px;
+  top: 109px;
+  z-index: 4;
+  opacity: 0;
+  animation: smokeL 0.8s linear infinite;
+  animation-delay: 5s;
+}
+.heart-two img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** 内容 - 底部 ***************/
+.section.footer-page .fp-tableCell {
+  display: block !important;
+}
+
+.footer-content {
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  font-size: 16px;
+  color: #666;
+}
+.footer-content .footer-content-top {
+  width: 1060px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer-content .footer-content-top .foot-left {
+  margin: 50px 0;
+  float: left;
+  text-align: left;
+}
+.footer-content .footer-content-top .foot-right {
+  margin: 50px 0;
+  float: right;
+  text-align: left;
+}
+.footer-content .footer-content-bottom {
+  font-size: 16px;
+  color: #666666;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.footer-content .foot-title {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.footer-content .foot-li {
+  color: #999999;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+
+
+
+/*************** 弹框 - 扫码下载 ***************/
+.cover-two {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.cover-two .down-one {
+  display: none;
+  width: 486px;
+  height: 366px;
+  background: #ffffff;
+  position: fixed;
+  left: 50%;
+  margin-left: -243px;
+  top: 50%;
+  margin-top: -183px;
+  border-radius: 20px;
+}
+.cover-two .down-one .down-close {
+  color: #999;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.cover-two .down-one .down-img {
+  width: 180px;
+  height: 180px;
+  margin: 93px auto 0;
+}
+.cover-two .down-one .down-img img {
+  width: 100%;
+  height: 100%;
+}
+.cover-two .down-one .down-text {
+  color: #666666;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1050px) {
+  .main-page .down-btn {
+    margin: 50px auto 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-page {
+    margin: 80px auto 0;
+  }
+}
+
+@media (max-height: 768px) {
+  .main-page {
+    margin: 80px auto 0;
+  }
+  .main-page-img {
+    height: 280px;
+  }
+  .main-page-font {
+    height: 65px;
+    margin-top: 0;
+  }
+  .main-page-text {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 30px auto 10px;
+  }
+  .muyu-page-left {
+    margin-top: 5%;
+  }
+}
+
+@media (max-height: 720px) {
+  .main-page-logo {
+    height: 80px;
+  }
+  .main-page-img {
+    height: 257px;
+  }
+
+  #menu {
+    right: 2%;
+  }
+
+  .coin-page-left-two,
+  .coin-page-left-three {
+    height: 420px;
+  }
+  .coin-page-right {
+    margin-top: 80px;
+  }
+  .main-page .down-btn {
+    margin: 10px auto 0;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans"><!--<![endif]-->
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="description" content="软件产品列表">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+</head>
+
+<body>
+
+<!-- 顶部栏 -->
+<div class="header">
+    <div class="header-content">
+        <a href="" class="header-content-logo" id="header-title">Hefei Jiniangu Technology Co., Ltd.,</a>
+    </div>
+</div>
+
+<div id="fullpage">
+
+    <!-- 2  -->
+    <div class="section">
+        <div class="muyu-page">
+            <div class="muyu-page-left">
+                <div class="app-title">多指连点器</div>
+                <div class="app-tip"></div>
+                <div class="app-text">
+                   多指点击器是一款无障碍辅助工具，专为有需要的用户提供触摸模拟功能。
+
+【主要功能】
+✅ 辅助行动不便用户进行触屏操作
+✅ 协助进行应用功能测试和演示
+✅ 支持自定义点击位置、频率和时长
+✅ 可保存多个操作配置方案
+
+【无障碍权限说明】
+本应用使用 AccessibilityService API 仅用于：
+• 在用户指定位置执行点击操作
+• 模拟触摸手势以辅助操作
+• 不会访问、收集或传输任何个人数据
+• 不会监控其他应用或系统信息
+
+【权限控制】
+您可以随时在 设置 > 无障碍功能 中禁用本应用的权限。
+禁用后，应用将停止所有触摸模拟功能。
+
+【数据安全】
+本应用完全离线运行，不收集用户数据，不连接网络。
+所有配置信息仅保存在本地设备中。
+
+适用于需要触摸辅助的用户，请合理合法使用。<br>
+                </div>
+                <div class="section-download-btn">
+                    <a class="ando-btn cameranow-download">安卓版本下载</a>
+                </div>
+            </div>
+            <div class="muyu-page-right">
+                <img class="muyu-page-right-one" src="img/nfc_1.webp">
+                <img class="muyu-page-right-two" src="img/nfc_2.webp">
+                <img class="muyu-page-right-three" src="img/nfc_3.webp">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="section footer-page">
+        <div class="footer-content" id="footer">
+            <div class="footer-content-top">
+                <div class="foot-left">
+                    <div class="foot-title">技术支持</div>
+                    <div class="foot-li"><a href="" style="color:#999999" id="footer-title">Hefei Jiniangu Technology Co., Ltd.,</a>
+                    </div>
+                    <div class="foot-li" style="font-weight: bold;">温馨提示：应用适合16岁(含)以上玩家娱乐</div>
+                </div>
+                <div class="foot-right">
+                    <div class="foot-title">联系我们</div>
+                    <div class="foot-li">邮箱：jiniangu2024@gmail.com</div>
+                    <div class="foot-li">地址：中国（安徽）自由贸易试验区合肥片区花峰路1201号跨境电商产业园三期3幢GF区4层长河经济城H5061号</div>
+                </div>
+            </div>
+            <div class="footer-content-bottom">
+                <span id="company">©2024 Hefei Jiniangu Technology Co., Ltd., All rights reserved.</span>
+                <a href="https://beian.miit.gov.cn/" style="color:#666666" id="beian">备案号：皖ICP备2024036672号</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(function () {
+        $('#fullpage').fullpage({
+            afterLoad: function (anchorLink, index) {
+            },
+            onLeave: function (index, direction) {
+
+            }
+        });
+    });
+</script>
+</body>
+</html>
